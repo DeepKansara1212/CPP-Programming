@@ -10,7 +10,9 @@ int main() {
 
     int num1 = 10, num2 = 20, num3 = 30, num4 = 40;
 
-    int age = 10;
+    const int age = 10;
+    // age is declared as a constant, so it cannot be modified later in the code.
+    // age = 20;
     // char str[] = {'c', 'o', 'd', 'e', '\0'};
     string _str = "code";
     float number_1 = 10.5;
@@ -18,6 +20,8 @@ int main() {
     char character = 'c';
     bool isTrue = true;
 
+
+    char char1 = 99;
 
     // "int" is a keyword in C++ and cannot be used as a variable name.
     // float int = 10.5f; 
@@ -28,6 +32,10 @@ int main() {
     cout << number2 << endl;
     cout << character << endl;
     cout << isTrue << endl; 
+    cout << char1 << endl; // prints 'c' as 99 is the ASCII value of 'c'
 
     return 0;
 }
+
+// 35e3 -> 35 * 10^3 = 35000
+// 35e-3 -> 35 * 10^-3 = 0.035
